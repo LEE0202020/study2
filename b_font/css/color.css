@@ -1,0 +1,12 @@
+.rgb {
+    color: rgb(0, 0, 255);
+}
+.hex {
+    /* color: #00F; */
+    color: #0000FF;
+}
+.hex {
+    /* color: #00F; */
+    color: #ED4230;
+}
+/* 16진수일때는'#'씀 */

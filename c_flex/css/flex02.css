@@ -1,0 +1,19 @@
+.container {
+    
+    display: flex;
+    gap: 10px;
+    width: 200px;
+    /*  */
+    border: solid 4px black;
+    /* flex-direction: row; 행방향*/
+    /* flex-direction: row; */
+    flex-direction: column;
+    padding: 20px;
+    margin: 100px;
+}
+
+div.box {
+    width: 200px;
+    height: 100px;
+    background-color: skyblue;
+}

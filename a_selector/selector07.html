@@ -7,33 +7,32 @@
     <style>
         button:active{
             background-color: pink;
-        } /*. 누르고 있을때 */
+        }  /* 누르고 있는 동안 → 분홍 배경 */
         button:hover{
             color: blue;
-        }.    /*. 마우스를 올렸을때 색 바뀜 */
+        }    /*. 마우스를 올렸을때 색 바뀜 */
         a:visited{
             color: blue;
-        }
+        }   /* 이미 방문한 링크 → 파랑 */
         a:link{
             color: black;
-        }
-        /* 가상요소  */
+        }   /* 아직 방문 안 한 링크 → 검정 */
+
         p::after{
-            content: "" ;
-            display: block;
+            content: "" ;              /* 가상 요소를 만들려면 꼭 필요 (빈 내용) */
+            display: block;          /* 크기를 주려고 블록으로 */
             width: 100px;
             height: 100px;
             background-color: red;
-        }
+        }      
+            /* - :link - 방문한 적이 없는 링크
+            - :visited - 방문한 적이 있는 링크
+            - :hover - 마우스를 롤오버 했을 때
+            - :active - 마우스를 클릭했을 때
+            - ::after - 가상요소 뒤에 가짜요소 추가   */
     </style>
 </head>
 <body>
-    <!--         
-        - :link - 방문한 적이 없는 링크
-        - :visited - 방문한 적이 있는 링크
-        - :hover - 마우스를 롤오버 했을 때
-        - :active - 마우스를 클릭했을 때 
-    -->
     <butten class="btn">어흥!</butten>
     <a href="https://store.kakao.com/kakaofriends">카카오프랜즈샵</a>
     <a href="https://www.naver.com">네이버</a>

@@ -1,12 +1,14 @@
 .container {
     position: relative;
     /* 
-        inline: 크기를 바꿀 수 없다. 자식이 가지고 있는 크기만큼 크기가 할당
+        inline: 크기를 바꿀 수 없다. 자식이 가지고 있는 크기만큼 크기가 할당(상자크기를 배너 크기에 맞춰 줄임)
     */
     display: inline-flex;
+
 }
 
 .arrow {
+    /* 배너 위에띄움 */
     position: absolute;
     width: 40px;
     height: 40px;
